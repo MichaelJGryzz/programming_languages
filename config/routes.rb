@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # Set the root path to the index of programming_languages
+  root 'programming_languages#index'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Resources for programming_languages
+  resources :programming_languages
 end
